@@ -1,3 +1,31 @@
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+  
+# development:
+#    adapter: postgresql
+#    encoding: unicode
+#    database: reddera_development
+#    pool: 5
+#    username: postgres
+#    password: root
+
+# test:
+#    adapter: postgresql
+#    encoding: unicode
+#    database: reddera_development
+#    pool: 5
+#    username: postgres
+#    password: root
+ 
+# production:
+#    adapter: postgresql
+#    encoding: unicode
+#    database: reddera_development
+#    pool: 5
+#    username: postgres
+#    password: root
+
 development:
   adapter: mysql2
   encoding: utf8
@@ -8,6 +36,7 @@ development:
   username: root
   password: root
   host: localhost
+
 
 production:
   adapter: mysql2
