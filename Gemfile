@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.6"
+ruby "2.2.2"
 
 gem 'devise'
 gem 'omniauth'
@@ -8,7 +8,7 @@ gem 'omniauth-facebook'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-#gem 'mysql2','~> 0.3.18'
+gem 'mysql2','~> 0.3.18'
 gem 'twilio-ruby'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
