@@ -146,6 +146,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    libv8 (3.16.14.19)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -159,6 +160,8 @@ GEM
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (1.2.0)
+    mysql2 (0.3.21)
+    mysql2 (0.3.21-x86-mingw32)
     nested_form (0.3.2)
     netrc (0.11.0)
     nokogiri (1.8.5)
@@ -255,6 +258,7 @@ GEM
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
     redis (3.3.5)
+    ref (2.0.0)
     remotipart (1.4.2)
     request_store (1.4.1)
       rack (>= 1.4)
@@ -309,6 +313,9 @@ GEM
       sunspot (= 2.3.0)
     sunspot_solr (2.3.0)
     temple (0.8.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -370,6 +377,7 @@ DEPENDENCIES
   intercom-rails (= 0.3.4)
   jbuilder (~> 2.0)
   jquery-rails
+  mysql2 (~> 0.3.18)
   omniauth
   omniauth-facebook
   omniauth-google-oauth2
@@ -389,6 +397,7 @@ DEPENDENCIES
   sprockets-rails
   sunspot_rails
   sunspot_solr
+  therubyracer
   thin
   turbolinks (= 2.5.3)
   twilio-ruby

@@ -1,27 +1,26 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  
 development:
-   adapter: postgresql
-   encoding: unicode
-   database: reddera_development
-   pool: 5
-   username: postgres
-   password: root
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  socket: /var/run/mysqld/mysqld.sock
+  reconnect: true
+  database: reddera_development
+  username: root
+  password: root
+  host: localhost
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: root
+  database: reddera_development
 
 test:
-   adapter: postgresql
-   encoding: unicode
-   database: reddera_development
-   pool: 5
-   username: postgres
-   password: root
- 
-production:
-   adapter: postgresql
-   encoding: unicode
-   database: reddera_development
-   pool: 5
-   username: postgres
-   password: root
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: root
+  database: reddera_development
