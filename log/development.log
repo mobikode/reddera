@@ -2815,3 +2815,1891 @@ RSolr::Error::ConnectionRefused (Connection refused - {:data=>"<?xml version=\"1
   Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
   Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 114.143.205.226 at 2018-10-23 15:39:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mServiceSubCategory Load (0.2ms)[0m  [1mSELECT `service_sub_categories`.* FROM `service_sub_categories`[0m
+  [1m[35mServiceCategory Load (0.1ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (923.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 1292ms (Views: 1270.5ms | ActiveRecord: 0.3ms | Solr: 1.2ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 15:39:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.9ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.3ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.9ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/Homepage/Featured-Professional.jpg" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.7ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:39:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.5ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 114.143.205.226 at 2018-10-23 15:40:00 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.6ms)
+
+
+Started GET "/how_it_works" for 114.143.205.226 at 2018-10-23 15:40:01 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#how_it_works as HTML
+  Rendered home/how_it_works.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_login.html.erb (14.8ms)
+  Rendered layouts/_signup.html.erb (8.8ms)
+  Rendered layouts/_stylist_signup.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (32.5ms)
+Completed 200 OK in 374ms (Views: 371.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/HowItWorks/TheRedderaGuaranteeImg.jpg" for 114.143.205.226 at 2018-10-23 15:40:01 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/HowItWorks/FriendsImg.jpg" for 114.143.205.226 at 2018-10-23 15:40:01 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/HowItWorks/VettedProImage.jpg" for 114.143.205.226 at 2018-10-23 15:40:01 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 114.143.205.226 at 2018-10-23 15:43:54 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.2ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.1ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1025.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 1434ms (Views: 1381.1ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Mystyle.self-eee6df25857da4cc0f2a87b1a746e7a5384d625e440ebc06a68a516e7552e2a5.css?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/animate.self-9cb946a1e3a09da18a25dbaf31221973569ffbb774eef2402fcc13b29b7aecaa.css?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ie.self-163eb039dcb1e0c3471b7d91386eabb8753da6906e84824c019f9ff56bdb83a6.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/form.self-711978b53107be2d9ef1b7369beb151b229cefa8c1405a056d3c34262d5b477e.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/escape-selector.self-43e4d61501e4ffb1ecba387affbae1eb3e1c863ab0b0e71897851cddd246e50e.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/keycode.self-ad63cd20acf49dd333bbbc537454d7d475bd610eb5b88de0dca009f0c3d314b1.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effects/effect-transfer.self-5ab6d30ecb0b73e2b9a528f6d66c0732ba43a93a5326d88dae547f0c7c759e79.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui.self-d4c1ae19d9b853ec1c8c83784fa979bbe4075a84932a080bbd7d7706240410e1.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:56 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.8ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:43:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.5ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/Homepage/Featured-Professional.jpg" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.1ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.7ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:43:58 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.3ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 114.143.205.226 at 2018-10-23 15:43:59 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.6ms)
+
+
+Started GET "/" for 114.143.205.226 at 2018-10-23 15:46:21 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.2ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.1ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 335ms (Views: 331.7ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 15:46:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.7ms)
+
+
+Started GET "/assets/Homepage/Featured-Professional.jpg" for 114.143.205.226 at 2018-10-23 15:46:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff2" for 114.143.205.226 at 2018-10-23 15:46:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.8ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 114.143.205.226 at 2018-10-23 15:46:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (121.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:23 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.woff" for 114.143.205.226 at 2018-10-23 15:46:23 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:23 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+
+
+Started GET "/fonts/glyphicons-halflings-regular.ttf" for 114.143.205.226 at 2018-10-23 15:46:23 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.6ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.2ms)
+
+
+Started GET "/how_it_works" for 114.143.205.226 at 2018-10-23 15:46:24 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#how_it_works as HTML
+  Rendered home/how_it_works.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_login.html.erb (46.6ms)
+  Rendered layouts/_signup.html.erb (12.6ms)
+  Rendered layouts/_stylist_signup.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (69.3ms)
+Completed 200 OK in 400ms (Views: 395.9ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+
+
+Started GET "/assets/HowItWorks/TheRedderaGuaranteeImg.jpg" for 114.143.205.226 at 2018-10-23 15:46:24 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/HowItWorks/FriendsImg.jpg" for 114.143.205.226 at 2018-10-23 15:46:24 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/HowItWorks/VettedProImage.jpg" for 114.143.205.226 at 2018-10-23 15:46:24 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/elite.html" for 114.143.205.226 at 2018-10-23 15:46:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/elite.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.9ms)
+
+
+Started GET "/elite.html" for 114.143.205.226 at 2018-10-23 15:46:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/elite.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.5ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 15:46:28 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.3ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:28 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:28 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.9ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 114.143.205.226 at 2018-10-23 15:46:28 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.9ms)
+
+
+Started GET "/index.html" for 114.143.205.226 at 2018-10-23 16:48:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.9ms)
+
+
+Started GET "/index.html" for 114.143.205.226 at 2018-10-23 16:48:22 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.9ms)
+
+
+Started GET "/assets/Mystyle.self-eee6df25857da4cc0f2a87b1a746e7a5384d625e440ebc06a68a516e7552e2a5.css?body=1" for 114.143.205.226 at 2018-10-23 16:48:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/animate.self-9cb946a1e3a09da18a25dbaf31221973569ffbb774eef2402fcc13b29b7aecaa.css?body=1" for 114.143.205.226 at 2018-10-23 16:48:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/animated-headlines.self-cee27942cf042a90fba1985df79c84ee569220071d4ae9201fc6380cc94ca575.css?body=1" for 114.143.205.226 at 2018-10-23 16:48:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 16:48:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.3ms)
+
+
+Started GET "/professional_sign_up" for 114.143.205.226 at 2018-10-23 16:49:17 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#prof_sign_up as HTML
+  Rendered home/prof_sign_up.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_login.html.erb (5.9ms)
+  Rendered layouts/_signup.html.erb (4.8ms)
+  Rendered layouts/_stylist_signup.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (17.1ms)
+Completed 200 OK in 310ms (Views: 307.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/gift-card.html" for 114.143.205.226 at 2018-10-23 16:49:21 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/gift-card.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.9ms)
+
+
+Started GET "/gift-card.html" for 114.143.205.226 at 2018-10-23 16:49:21 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/gift-card.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.7ms)
+
+
+Started GET "/professional_sign_up" for 114.143.205.226 at 2018-10-23 16:49:24 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#prof_sign_up as HTML
+  Rendered home/prof_sign_up.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_login.html.erb (6.3ms)
+  Rendered layouts/_signup.html.erb (5.6ms)
+  Rendered layouts/_stylist_signup.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (19.2ms)
+Completed 200 OK in 308ms (Views: 305.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Mystyle.self-eee6df25857da4cc0f2a87b1a746e7a5384d625e440ebc06a68a516e7552e2a5.css?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/widgets/spinner.self-2769386b6b06e175a13ccdcd6d2d0cd40c45cec19607bcb818cee0704c165557.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 16:49:25 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.7ms)
+
+
+Started GET "/javascripts/vendor/modernizr.js" for 114.143.205.226 at 2018-10-23 16:49:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/modernizr.js"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 114.143.205.226 at 2018-10-23 16:49:26 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/footer.html" for 114.143.205.226 at 2018-10-23 16:49:27 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/footer.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (4.8ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 114.143.205.226 at 2018-10-23 16:49:27 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.4ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 114.143.205.226 at 2018-10-23 16:49:28 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.4ms)
+
+
+Started GET "/gift-card.html" for 114.143.205.226 at 2018-10-23 16:49:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/gift-card.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.4ms)
+
+
+Started GET "/gift-card.html" for 114.143.205.226 at 2018-10-23 16:49:57 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/gift-card.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.4ms)
+
+
+Started GET "/gift-cards.html.erb" for 114.143.205.226 at 2018-10-23 16:50:07 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/gift-cards.html.erb"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/gift_cards" for 114.143.205.226 at 2018-10-23 16:50:48 +0000
+Cannot render console from 114.143.205.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GiftCardsController#index as HTML
+  Rendered gift_cards/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"gift_cards", :user_id=>nil} missing required keys: [:user_id]):
+    12:                                   <h2 class="sh7">Gift Cards</h2>
+    13:                                   </span>
+    14:                             </div>
+    15:                             <%= form_tag  user_gift_cards_path(current_user) , :html => {:method => :post} do %>
+    16: 
+    17:                           <div class="col-md-3">
+    18:                               <div class="form-group">
+  app/views/gift_cards/index.html.erb:15:in `_app_views_gift_cards_index_html_erb__1322408438360286733_70128892332540'
+
+
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 168.90.76.122 at 2018-10-23 17:22:15 +0000
+Cannot render console from 168.90.76.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.1ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.1ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 296ms (Views: 293.3ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
