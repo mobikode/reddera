@@ -52,7 +52,7 @@ gem 'redis', '~>3.2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'instagram'
-gem "faraday", "~> 0.8.9"
+gem "faraday", "~> 0.9.0"
 gem 'sidekiq'
 gem 'voucherify','~> 0.6.0'
 gem 'rails_rest_vote'
