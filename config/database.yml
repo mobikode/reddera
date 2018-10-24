@@ -38,6 +38,7 @@ development:
   password: root
   host: localhost
 
+
 production:
   adapter: mysql2
   encoding: utf8
