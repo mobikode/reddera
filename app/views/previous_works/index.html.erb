@@ -1,92 +1,120 @@
-<div class="tab-pane active" id="manageportfolio">
-  <section class="container">
-    <div class="row dashboard">
-        <div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="page-header">
-              <h1 class="pull-left">Top 5 </h1>
-              <span class="pull-left msg-notf-icon"><img src='<%=asset_path('icon-shedule.png')%>'></span>
-              <div class="clearfix"></div>
-              <h5>Edit Top 5 Portfolio Photos </h5>
-            </div>
-          </div>
-
-          <div class="col-md-9 col-sm-9 col-xs-12">
-            <div >
-
-              <%if !@previous_works.blank?%>
-                  <%@previous_works.each do |prev|%>
-                    <div class="portfolio-box">
-
-
-                          <%=image_tag prev.photo.image.url%>
-                          <%= form_tag( user_previous_work_path(current_user,prev.id), :method => :put,:multipart => true )  do %>
-                                <%= file_field_tag 'file',:accept=>"image/*", :onchange=>"this.form.submit();" ,:style=>"font-size:73%"%>
-
-                          <% end %>
-
-
-                  </div>
-
-                  <%end%>
-                  <div class="clearfix"></div>
-              <%end%>
-
-
-
-            </div>
-            <div class="clearfix"></div>
-            <hr/>
-          </div>
+ <div id="home">
+        <div class="slider-active owl-carousel">
+            <div class="single-slider">
+              
         </div>
+       <!-- <div class="go-bottom"> <a href="#about-us" class="mouse"><i class="fa fa-angle-double-down"></i></a> </div>-->
     </div>
-    <div class="row dashboard">
-        <div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="page-header">
-              <h1 class="pull-left">
-                Additional
-                <br>
-                Photos
-              </h1>
-             <span class="pull-left msg-notf-icon">
-                <img src="<%=asset_path('icon-sheduleplus.png')%>">
-              </span>
-              <div class="clearfix"></div>
-              <h5>
-                Edit or Upload Additional
-                <br>
-                Portfolio Photos
-              </h5>
-
+    <!--/End Header -->
+    <!--About Us section -->
+    <section id="about-us" class="section-padding">
+      <div class="container">
+        
+       <div class="col-sm-12">
+         <div class="col-sm-4">
+          <div class="row">
+                       <div class="col-sm-2 icn-img"><img src="assets/images/camera.png" class="img-responsive" alt="img"/></div>
+                       <div class="col-sm-10 sec-text"> <h3>Services</h3>
+                        <span>Edit, Add, or Delete Services</span>
             </div>
-          </div>
-          <div class="col-md-9 col-sm-9 col-xs-12">
-            <div>
-              <%if !@additional_photos.blank?%>
-                  <%@additional_photos.each do |prev|%>
-                      <div class="portfolio-box">
-
-
-                        <%=image_tag prev.photo.image.url%>
-                        <%= form_tag( user_previous_work_path(current_user,prev.id), :method => :put,:multipart => true )  do %>
-                            <%= file_field_tag 'file',:accept=>"image/*", :onchange=>"this.form.submit();" ,:style=>"font-size:73%"%>
-
-                        <% end %>
-
-
-                      </div>
-
-                  <%end%>
-                  <div class="clearfix"></div>
-              <%end%>
-
-            </div>
-        </div>
-        </div>
- </div>
-  </section>
-</div>
+                 </div>
+       </div>
+        <div class="col-sm-8">
+                 <div class="row">
+                    
+            <div class="col-sm-12 profile-padding">
+                
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top1.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top2.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top3.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top4.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top3.png" class="img-responsive" alt="img"/>
+               </div>
+             
+             <div class="col-sm-12 profile-padding">
+               <div class="col-sm-12">
+                <div class="row">
+                  <img src="assets/images/dash/LineSeparation.png" class="separate" alt="img"/>
+                </div>
+              </div>
+             </div> 
+             
+                </div>
+      </div>
+     </div> 
+     
+     </div>
+     
+     
+     <div class="col-sm-12">
+         <div class="col-sm-4">
+          <div class="row">
+                       <div class="col-sm-2 icn-img"><img src="assets/images/add-camera.png" class="img-responsive" alt="img"/></div>
+                       <div class="col-sm-10 sec-text"> <h3>Additional Photos</h3>
+                        <span>Edit or Upload Additional Portfolio Photos</span>
+            <span><img src="assets/images/red-f.png" class="img-responsive" alt="img"/> Upload  From Facebook</span>
+            <span><img src="assets/images/inta.png" class="img-responsive" alt="img"/> Upload  From Facebook</span>
+             </div>
+                 </div>
+       </div>
+        <div class="col-sm-8">
+                 <div class="row">
+                    
+            <div class="col-sm-12 profile-padding">
+                
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top1.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top2.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top3.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top4.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top3.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top1.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-img">
+                 <img src="assets/images/dash/Top2.png" class="img-responsive" alt="img"/>
+               </div>
+               <div class="col-sm-4 portfo-up">
+                 <span>+</span>
+                 <span>upload</span>
+               </div>
+               
+             <div class="col-sm-12 profile-padding">
+               <div class="col-sm-12">
+                <div class="row">
+                  <img src="assets/images/dash/LineSeparation.png" class="separate" alt="img"/>
+                </div>
+              </div>
+             </div> 
+             
+                </div>
+      </div>
+     </div> 
+     
+     </div>
+    </div>  
+    </section>
+    <!--About Us section -->
+    <!--Our service section -->
+   
 <script>
     $( document ).ready(function() {
         NProgress.done();

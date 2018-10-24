@@ -1,217 +1,231 @@
-
-<div id="transactionhistory" class="tab-pane active">
-<section class="container">
-  <%if !@notify.blank?%>
-      <div class="alert alert-success alert-danger" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <%=@notify%>
-      </div>
-  <%end%>
- <%if current_user.isStylist?%>
-  <div class="row transactions">
-    <div>
-      <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="page-header">
-          <h1 class="pull-left">
-            Payout
-            <br>
-            Method
-          </h1>
-
-          <span class="pull-left msg-notf-icon">
-                <img src="<%=asset_path('icon-payment.png')%>">
-          </span>
-          <div class="clearfix"></div>
-          <h5>Edit or Add Payout Methods </h5>
-         </div>
-
+<div id="home">
+        <div class="slider-active owl-carousel">
+            <div class="single-slider">
+              
         </div>
-      <div class="col-md-9 col-sm-9 col-xs-12">
-        <div class="row">
-          <div class="trs-ctn">
-            When you receive a payment for a service, you’ll receive a payout.Our secure payment system supports several payout methods, which can be setup and altered here. Visit the
-            <a href="#">Payout FAQ.</a>
-          </div>
-          <%= form_for @payment_info,:url=>user_payment_info_path(current_user.id)  , :method => :put do |f| %>
-          <div class="form-row mt35">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="legal_name">Legal Name</label>
-                <%= f.text_field :legal_name,  class: "form-control",:placeholder=>"Legal Name" %>
-              </div>
+       <!-- <div class="go-bottom"> <a href="#about-us" class="mouse"><i class="fa fa-angle-double-down"></i></a> </div>-->
+    </div>
+    <!--/End Header -->
+    <!--About Us section -->
+    <section id="about-us" class="section-padding">
+      <div class="container">
+        
+       <div class="col-sm-12">
+         <div class="col-sm-4">
+          <div class="row">
+                       <div class="col-sm-2 icn-img"><img src="assets/images/pay.png" class="img-responsive" alt="img"/></div>
+                       <div class="col-sm-10 sec-text"> <h3>Payament Method</h3>
+                        <span>View, or Delete</span>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="business_name">Business Name</label>
-                <%= f.text_field  :business_name,  class: "form-control",:placeholder=>"Business Name" %>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="form-row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="tax_id">Tax ID</label>
-                <%= f.text_field  :tax_id,  class: "form-control",:placeholder=>"Tax ID" %>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="dob">Date Of Birth</label>
-                <%= f.text_field   :dob, class: "form-control",:placeholder=>"Date Of Birth" %>
-              </div>
-            </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="ssn">SSN (Full or Last 4 Digits)</label>
-                  <%= f.text_field   :ssn,  class: "form-control",:placeholder=>"SSN (Full or Last 4 Digits)" %>
+                 </div>
+       </div>
+        <div class="col-sm-8">
+                 <div class="row">
+                    
+            <div class="col-sm-12 profile-padding">
+                
+                <form class="modelform">
+                          <div class="col-md-10">
+                     <p> When you receive a payment for a service, you’ll receive a payout. Our secure payment system supports several payout methods, which can be setup and altered here. Visit the Payout FAQ.</p>
+                    </div>
+                          <div class="col-md-6">
+                       <label for="email" class="control-label">Legal Name</label>
+                                         <input type="text" class="form-control" />
+                                       </div>
+                     
+                                      <div class="col-md-6">
+                        <label for="email" class="control-label">Business Name</label>
+                                          <input type="text" class="form-control" />
+                                       </div>
+                                         <div class="col-sm-4">
+                       <label for="mobile" class="control-label">Tax ID</label>
+                       <input type="email" class="form-control" id="mobile" />
+                    </div>
+                    <div class="col-sm-4">
+                       <label for="email" class="control-label">Date of Birth</label>
+                       <input type="date" class="form-control" id="email"  />
+                      </div>
+                       <div class="col-md-4">
+                       <label for="email" class="control-label">SSN (Full or Last 4 Digits)</label>
+                       <input type="text" class="form-control" id="email"  />
+                      
+                     </div> 
+                  
+                    <div class="col-sm-6">
+                      <label for="city" class="control-label">Account Number</label>
+                      <input type="text" class="form-control"  />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="state" class="control-label"> Routing Number</label>
+                        <input type="text" class="form-control"  />
+                    </div>
+                                        <div class="col-sm-12">
+                      <label for="city" class="control-label">Street Address</label>
+                      <input type="text" class="form-control"  />
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="city" class="control-label">City</label>
+                      <input type="text" class="form-control"  />
+                    </div>
+                    
+                    <div class="col-sm-4">
+                      <label for="city" class="control-label">State</label>
+                       <select class="form-pro-form" placeholder="Sub-Service" >
+                       <option>Sub-Service </option>
+                       <option>Select Option  </option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                      <label for="city" class="control-label">State</label>
+                      <input type="text" class="form-control"  />
+                    </div>
+                    <div class="col-sm-8">
+                    <span>Braintree’s Terms</span>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="city" class="control-label">I accept Braintree’s Terms and Conditions.</label>
+                      <div class="col-sm-8"><input type="checkbox"  /></div>
+                      
+                      
+                    </div>
+                    
+                                       <div class="col-sm-4 col-sm-offset-2 ">
+                                        <button type="button" class="btn-sm signup-frm">
+                                            Update</button>
+                                        
+                                    </div>
+                                
+                                </form>
+                         
+             
+             <div class="col-sm-12 profile-padding">
+               <div class="col-sm-12">
+                <div class="row">
+                  <img src="assets/images/dash/LineSeparation.png" class="separate" alt="img"/>
                 </div>
               </div>
-
-              </div>
-          <div class="form-row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account_number">Account Number</label>
-                <%= f.number_field :account_number,  class: "form-control",:placeholder=>"Account Number" %>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="routing_number">Routing Number</label>
-                <%=  f.number_field :routing_number,class: "form-control",:placeholder=>"Routing Number" %>
-
-              </div>
-            </div>
-
-
-          </div>
-          <div class="form-row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="street_address">Street Address</label>
-                <%= f.text_field  :street_address, class: "form-control",:placeholder=>"Street Address" %>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="city">City</label>
-                <%= f.text_field  :city,  class: "form-control",:placeholder=>"City" %>
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="state">State</label>
-                <%=select_tag :state, options_for_select(us_states),class: "form-control" %>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="zip_code">Zip Code</label>
-                <%= f.number_field :zipcode,  class: "form-control",:placeholder=>"Zip Code"%>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-6">
-                <div class="form-group checkbox-outer">
-                  <h6 class="terms-ctent">Braintree’s Terms</h6>
-                  <div class="checkbox">
-                    <input id="remember" class="" type="checkbox" name="remember" tabindex="3">
-                    <label class="checkbox-text" for="remember"> I accept Braintree’s Terms and Conditions.</label>
-                  </div>
+             </div> 
+             
                 </div>
+      </div>
+     </div> 
+     
+     </div>
+     
+     
+     <div class="col-sm-12">
+         <div class="col-sm-4">
+          <div class="row">
+                       <div class="col-sm-2 icn-img"><img src="assets/images/past.png" class="img-responsive" alt="img"/></div>
+                       <div class="col-sm-10 sec-text"> <h3>Recent Transaction</h3>
+                        <span>View or Delete</span>
+            
+             </div>
+                 </div>
+       </div>
+        <div class="col-sm-8">
+                 <div class="row">
+                    
+            <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              <div class="col-sm-2 pro-pic">
+                <img src="assets/images/dash/ClientPic.png" class="img-responsive img-circle-pro" alt="img"/>
               </div>
-
-              <div class="col-md-6 mt30">
-                <span>
-                  <%= submit_tag "Update", class: "btn-confirm btn btn-small btn-primary" %>
-
-                </span>
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
               </div>
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Delete</button> 
+                
+              </div>
+              </div> 
             </div>
-
-          </div>
-
-           <%end%>
+            <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              <div class="col-sm-2 pro-pic">
+                <img src="assets/images/dash/ClientPic.png" class="img-responsive img-circle-pro" alt="img"/>
+              </div>
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Delete</button> 
+                
+              </div>
+              </div> 
             </div>
-        </div>
-        <div class="clearfix"></div>
+            <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              <div class="col-sm-2 pro-pic">
+                <img src="assets/images/dash/ClientPic.png" class="img-responsive img-circle-pro" alt="img"/>
+              </div>
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Delete</button> 
+                
+              </div>
+              </div> 
+            </div>
+            <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              <div class="col-sm-2 pro-pic">
+                <img src="assets/images/dash/ClientPic.png" class="img-responsive img-circle-pro" alt="img"/>
+              </div>
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Delete</button> 
+                
+              </div>
+              </div> 
+            </div>
+            <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              <div class="col-sm-2 pro-pic">
+                <img src="assets/images/dash/ClientPic.png" class="img-responsive img-circle-pro" alt="img"/>
+              </div>
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Delete</button> 
+                
+              </div>
+              </div> 
+            </div>
       </div>
-  </div>
-  <%end%>
-
-  <div class="row dashboard">
-    <div class="col-md-3 col-sm-3 col-xs-12">
-
-      <div class="page-header">
-        <h1 class="pull-left">
-          Recent
-          <br>
-          Transactions
-        </h1>
-        <span class="pull-left msg-notf-icon">
-            <img src="<%=asset_path('icon-watch.png')%>">
-        </span>
-
-        <div class="clearfix"></div>
-        <h5>View Recent Transactions </h5>
-      </div>
-    </div>
-    <div class="col-md-9 col-sm-9 col-xs-12">
-          <% @transactions.each do |transaction| %>
-
-
-            <div class="table-responsive table-booking">
-
-              <table class="table table-condensed latest-thum-size text-justfy">
-                <tbody>
-                <tr>
-             <td>
-                  <%if current_user.isStylist?%>
-
-                            <a href="<%=client_path(transaction[0].user.id,transaction[0].user.first_name)%>" class="thumbnail  "><%=image_tag transaction[0].user.photo.image.url,:class=>"img-circle"%></a>
-                        <%=  transaction[0] .user.first_name%>
-
-
-                <%else%>
-                        <a href="<%=stylist_path(transaction[0].stylist.id,transaction[0].stylist.first_name) %>" class="thumbnail  "><%= image_tag transaction[0].stylist.photo.image.url,:class=>"img-circle"%></a>
-                      <%=  transaction[0].stylist.first_name%>
-
-                  <%end%>
-             </td>
-
-                  <td>
-                    <%= Booking.get_services_name_by_booking(transaction[0])%></td>
-                  <td>
-                    <%=transaction[0].dates.strftime("%a - %b. %d %Y") %>,<%= transaction[0].slots.slice(0,7) %></td>
-              <td>$<%=  get_amount_paid_for_tranaction(transaction[1]) %></td>
-
-           <td>
-                  <%#= link_to "DELETE", transaction_path(transaction.id),:class=>"btn-confirm btn btn-small btn-primary" , method: :delete %>
-         </td>
-
-
-            <br/>
-
-                  <%end%>
-      </tr>
-      </tbody>
-      </table>
-        </div>
-      </div>
-    </div>
-
-
-
-</section>
-
-
+     </div> 
+     
+     </div>
+    </div>  
+    </section>
+    <!--About Us section -->
+    <!--Our service section -->
+   
 
 
 

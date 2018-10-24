@@ -56,7 +56,7 @@
     .section-padding {
         padding: 20px;
     }
-	section#elith-section {
+    section#elith-section {
     padding: 20px;
 }
     .section-title p {
@@ -183,9 +183,9 @@
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
-	
-	/*new size */
-	.single-slider {
+    
+    /*new size */
+    .single-slider {
     height: 300px;
     background-size: 100%;
     position: relative;
@@ -193,14 +193,14 @@
 }
 
 
-	/*  end*/
-	
-	.col-md-5.hrlinr-l {
+    /*  end*/
+    
+    .col-md-5.hrlinr-l {
     padding: 1px;
     width: 42%;
     float: left;
 }
-	.hrlinr {
+    .hrlinr {
     padding: 6px;
     text-align: center;
     float: left;
@@ -213,13 +213,13 @@
 .btn-group.btn-group-justified {
     padding: 3px;
 }
-	input#bigtext {
-    width: 340px;
+    input#bigtext {
+    width: 300px;
     /* padding: 1px; */
     border-radius: 3px;
     margin: 6px;
      }
-	 input.span3 {
+     input.span3 {
     margin-left: -5px;
     background-color: rgba(232, 227, 227, 0.69);
     color: white;
@@ -227,9 +227,9 @@
     border: 1px solid #ded5d5;
     padding: 3px;
     text-align: center;
-    width: 340px;
+    width: 300px;
     margin: 3px;
-	 border-radius: 3px;
+     border-radius: 3px;
 }
     .table-cell {
     padding: 0 10px;
@@ -277,7 +277,7 @@ img.show-img {
 .row.feature-prof.text-center {
     width: 100%;
     padding: 1px; 
-	margin-top: 10px;
+    margin-top: 10px;
 }
 .fet-pro-txt p {
     line-height: 24px;
@@ -371,7 +371,7 @@ button.btn.btn-primary.input-medium {
     text-align: center;
     background-size: 100% 100%;
     /* background: no-repeat; */
-	    height: 200px;
+        height: 200px;
 }
 .col-md-12.top-bg {
     padding-top: 10px;
@@ -403,7 +403,7 @@ section#elith-section {
 .img-circle-big {
     border-radius: 50%;
     /* height: 274px; */
-	    width: 84%;
+        width: 84%;
     /* float: left; */
     padding: 2%;
     margin: 0px auto;
@@ -759,14 +759,14 @@ img.img-prc-gift {
         font-size: 25px;
         right: 5px;
     }
-	img.img-prc-gift {
+    img.img-prc-gift {
     width: 81px;
     position: relative;
     z-index: 100;
     left: 51px;
     top: -5px;
     }
-	.img-circle-big {
+    .img-circle-big {
     border-radius: 50%;
     /* height: 274px; */
     width: 60%;

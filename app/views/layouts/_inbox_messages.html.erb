@@ -1,9 +1,6 @@
 
 <button href="#" class="dropdown-toggle msg-link-text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Messages
-  <span class="pull-right msg-not-icons"><%=read_messages(current_user).size%></span><span class="caret"></span></button>
-
-
-
+  <span class="pull-right msg-not-icons"><%=read_messages(current_user).try(:size)%></span><span class="caret"></span></button>
 
 
 <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">

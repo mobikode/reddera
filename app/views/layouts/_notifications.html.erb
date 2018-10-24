@@ -1,5 +1,5 @@
 <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-  <span class="pull-left msg-notf-icon" style="margin-left:-8px"><img src='<%=asset_path("icon-notification.png")%>'> <span class="pull-right msg-not-icons"><%=read_notification().size%></span></span>
+  <span class="pull-left msg-notf-icon" style="margin-left:-8px"><img src='<%=asset_path("icon-notification.png")%>'> <span class="pull-right msg-not-icons"><%=read_notification().try(:size)%></span></span>
 
 </a>
 

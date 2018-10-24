@@ -38,48 +38,48 @@
 /*
 @font-face {
 font-family: 'FjallaOne Regular';
-		src: url(/assets/fonts/font/FjallaOne-Regular.otf),format('truetype');
-	   
+        src: url(/assets/fonts/font/FjallaOne-Regular.otf),format('truetype');
+       
 }
 @font-face {
 font-family: 'OpenSans Regular';
-		src: url(/assets/fonts/font/OpenSans-Regular.ttf),format('truetype');
-	   
+        src: url(/assets/fonts/font/OpenSans-Regular.ttf),format('truetype');
+       
 }
 @font-face {
 font-family: 'OpenSans Bold';
-		src: url(/assets/fonts/font/OpenSans-Bold.ttf),format('truetype');
-	   
+        src: url(/assets/fonts/font/OpenSans-Bold.ttf),format('truetype');
+       
 }
 @font-face {
 font-family: 'OpenSans Light';
-		src: url(/assets/fonts/font/OpenSans-Light.ttf),format('truetype');
-	   
+        src: url(/assets/fonts/font/OpenSans-Light.ttf),format('truetype');
+       
 }
 @font-face {
 font-family: 'OpenSans Semibold';
-		src: url(/assets/fonts/font/OpenSans-Semibold.ttf),format('truetype');
-	   
+        src: url(/assets/fonts/font/OpenSans-Semibold.ttf),format('truetype');
+       
 }
 @font-face {
 font-family: 'Proxima Nova Bold';
-		src: url(/assets/fonts/font/ProximaNova-Bold.otf),format('truetype');
-	   
+        src: url(/assets/fonts/font/ProximaNova-Bold.otf),format('truetype');
+       
 }
 @font-face {
 font-family: 'Proxima Nova Regular';
-		src: url(/assets/fonts/font/ProximaNova-Regular.otf),format('truetype');
-	   
+        src: url(/assets/fonts/font/ProximaNova-Regular.otf),format('truetype');
+       
 }
 @font-face {
 font-family: 'Proxima Nova Semibold';
-		src: url(/assets/fonts/font/ProximaNova-Semibold.otf),format('truetype');
-	   
+        src: url(/assets/fonts/font/ProximaNova-Semibold.otf),format('truetype');
+       
 }
 @font-face {
 font-family: 'MyriadPro-Bold';
-		src: url(/assets/fonts/MyriadPro-Bold.otf),format('truetype');
-	
+        src: url(/assets/fonts/MyriadPro-Bold.otf),format('truetype');
+    
 }
 */
 body { 
@@ -144,12 +144,12 @@ h6 {
 
 h1 {
     font-size: 43px;
-	color: #564646;
+    color: #564646;
 }
 
 h2 {
     font-size: 27px;
-	font-family: 'libre', Regular;
+    font-family: 'libre', Regular;
 }
 
 h3 {
@@ -280,7 +280,7 @@ p {
 /* -- 4.0 - Common Styles -- */
 
 .section-padding {
-    padding: 60px 0;
+    padding: 90px 0;
 }
 
 .section-title {
@@ -483,7 +483,7 @@ nav.navbar.navbar-default.navbar-fixed-top {}
     height: 100%;
     text-align: center;
     width: 100%;
-	background-size: cover;
+    background-size: cover;
 }
 
 .table-cell {
@@ -923,7 +923,7 @@ a.boxed-btn {
     color: #cfcfcf;
    /* background-attachment: fixed;*/
     background-size: 100% 100%;
-	height: 500px;
+    height: 500px;
 }
 
 .overlay-color-skill:before {

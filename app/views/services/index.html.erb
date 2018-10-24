@@ -1,117 +1,179 @@
 
 <% @formlist=['15', '30', '45', '60', '75', '90', '105', '120','135','150','165','180','195','210','225','240'] %>
 
-<div class="tab-pane" id="manageservices">
-  <section class="container">
-    <div class="alert alert-warning alert-dismissible" id="alertWarning"role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      Some of the filed is blank
-    </div>
-    <div class="row dashboard">
-      <div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <div class="page-header">
-            <h1 class="pull-left">Services </h1>
-            <span class="pull-left msg-notf-icon"><img src='<%=asset_path('icon-service.png')%>'></span>
-            <div class="clearfix"></div>
-            <h5>Edit or Add Services</h5>
-          </div>
+<div id="home">
+        <div class="slider-active owl-carousel">
+            <div class="single-slider">
+              
         </div>
-
-          <!-- table -content-->
-
-            <div class="col-md-9 col-xs-12">
-              <div class="row" style="background-color: #f6f6f6cc;">
-                <div class="col-md-7 col-xs-12">
-                  <div class="manage-ser-select">
-                    <div class="select">
-                      <%=select_tag 'service_category', options_for_select(ServiceCategory.all.collect{ |u| [ u.name,u.id] }),:id=>"service_categories_id", :include_blank=> 'Main Category',class:"pl0",:style=>"background-color:#f6f6f6cc"%>
-
-                      <div class="select__arrow"></div>
-                    </div>
-                    <div class="select">
-
-
-                      <div id="sub_services_dropdown">
-
-                        <%= render :partial => "services/sub_services_dropdown", :sub_Services => {:sub_Services => @sub_services} %>
-
-                      </div>
-                      
-                    </div>
-                    <div class="select"> <span aria-hidden="true" class="glyphicon glyphicon-time mr5 clock-icon"></span>
-                      <%= select_tag('time', options_for_select(@formlist),:style=>"background-color:#f6f6f6cc", class:'',:id=>"time", :include_blank=> 'Duration') %>
-
-                      <div class="select__arrow"></div>
-                    </div>
-                    <div class="select"> <span aria-hidden="true" class="glyphicon fa-dollar mr5 clock-icon"></span>
-                      <%= select_tag('amount', options_for_select(getAmount()), :style=>"background-color:#f6f6f6cc",class: '',:id=>"amount", :include_blank=> 'Price') %>
-
-                      <div class="select__arrow"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-5 col-xs-12">
-                  <img src="<%=asset_path('2.gif')%>" id="addLoader" class="pull-right">
-
-                  <div class="location-box">
-                    <div class="location-header">
-                      <div class="mscls-btn">
-                        <div class="row m-closebtn">
-                          <div class="col-md-2">
-                            <%= submit_tag "+", class: "btn-close btn btn-small btn-primary pull-right" ,:id=>"submitbtn", :stylist_id=>current_user.id,:style=>"margin-right:10px"%>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <h1>Location</h1>
-                    </div>
-                    <div class="ms-checkbx">
-                      <input id="loc1" location-name="Manhattan" name="location" type="checkbox">
-                      <label for="loc1">Manhattan</label>
-                    </div>
-                    <div class="ms-checkbx">
-                      <input id="loc2" location-name="Queens" name="location" type="checkbox">
-                      <label for="loc2">Queens</label>
-                    </div>
-                    <div class="ms-checkbx">
-                      <input id="loc3" location-name="Brooklyn" name="location" type="checkbox">
-                      <label for="loc3">Brooklyn</label>
-                    </div>
-                    <div class="ms-checkbx">
-                      <input id="loc4" location-name="Bronx" name="location" type="checkbox">
-                      <label for="loc4">Bronx</label>
-                    </div>
-                    <div class="ms-checkbx">
-                      <input id="loc5" location-name="Jersey City" name="location" type="checkbox">
-                      <label for="loc5">Jersey City</label>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="clearfix"></div>
-              <div id="service_list">
-                <%= render :partial => "services/service_list", :locals => {:service => @services} %>
-
-              </div>
-
-              <%#if !current_page?(user_services_path(current_user))%>
-                  <div id="edit-service-modal">
-                    <%= render :partial => "services/edit_modal", :locals => {:service => @service,:edit=>@edit} %>
-
-                  </div>
-                  <%#end%>
-            </div>
-          </div>
+       <!-- <div class="go-bottom"> <a href="#about-us" class="mouse"><i class="fa fa-angle-double-down"></i></a> </div>-->
     </div>
-
-
-
+    <!--/End Header -->
+    <!--About Us section -->
+    <section id="about-us" class="section-padding">
+      <div class="container">
+        
+       <div class="col-sm-12">
+         <div class="col-sm-4">
+          <div class="row">
+                       <div class="col-sm-2 icn-img"><img src="assets/images/AddService.png" class="img-responsive" alt="img"/></div>
+                       <div class="col-sm-10 sec-text"> <h3>Services</h3>
+                        <span>Edit, Add, or Delete Services</span>
+            </div>
+                 </div>
+       </div>
+        <div class="col-sm-8">
+                 <div class="row">
+                    
+            <div class="col-sm-12 profile-padding">
+               <div class="col-sm-12  pro-details">
+               <form>
+                          <div class="col-md-6 pro-details">
+                       
+                     <div class="col-md-12">
+                                          <select class="form-pro-form" placeholder="Service Category">
+                       <option>Service Category</option>
+                       <option> Select Option </option>
+                      </select>
+                                         </div>
+                       
+                     <div class="col-md-12">
+                                          <select class="form-pro-form" placeholder="Sub-Service" >
+                       <option>Sub-Service </option>
+                       <option>Select Option  </option>
+                      </select>
+                                         </div>
+                     <div class="col-md-12">
+                                          <select class="form-pro-form" placeholder="Duration" >
+                       <option>Duration </option>
+                       <option>Select Option  </option>
+                      </select>
+                                         </div>
+                     <div class="col-md-12">
+                                          <select class="form-pro-form" placeholder="Cost" >
+                       <option>Cost  </option>
+                       <option>Select Option  </option>
+                      </select>
+                                         </div>
+                    
+                                       </div>
+                                   
+                    <div class="col-sm-4">
+                       <h3>Location</h3>
+                       <div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Sefaty Concern</label>
+                         </div>
+                       <div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Queens</label>
+                         </div>
+                       <div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Brooklyn</label>
+                         </div><div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Bronx</label>
+                         <div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Staten Island</label>
+                         </div>
+                       </div><div class="form-group">
+                         <input type="checkbox" name=""><label class="frmlb">Jersey City</label>
+                         </div>
+                    </div>
+                  
+                                   
+              
+              <div class="col-sm-2 pro-info">
+                 <button class="btn-primary pro-btn">Add</button> 
+                 
+              </div>
+              </form>
+             </div> 
+             <div class="col-sm-12 profile-padding">
+               <div class="col-sm-12">
+                <div class="row">
+                  <img src="assets/images/dash/LineSeparation.png" class="separate" alt="img"/>
+                </div>
+              </div>
+             </div> 
+             <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-4 pro-info">
+                 <button class="btn-primary pro-btn">Edit</button> 
+              
+                 <button class="btn-primary pro-btn">Delete</button> 
+              </div>
+              </div> 
+            </div>
+                         <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-4 pro-info">
+                 <button class="btn-primary pro-btn">Edit</button> 
+                
+                 <button class="btn-primary pro-btn">Delete</button> 
+              </div>
+              </div> 
+            </div>
+                         <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-4 pro-info">
+                 <button class="btn-primary pro-btn">Edit</button> 
+               
+                 <button class="btn-primary pro-btn">Delete</button> 
+              </div>
+              </div> 
+            </div>
+                         <div class="col-sm-12 profile-padding">
+              <div class="col-sm-12 pro-details">
+              
+              <div class=" col-sm-8 pro-info">
+               <h3>Women’s Hair | Blow-Out</h3>
+               <div class="col-sm-4">Jamie Smith</div>
+               <div class="col-sm-4">Thu - Jan. 14 2017, 10am</div>
+               <div class="col-sm-2">60mins</div>
+               <div class="col-sm-2 ">$70</div>
+              </div>
+              <div class="col-sm-4 pro-info">
+                 <button class="btn-primary pro-btn">Edit</button> 
+               
+                 <button class="btn-primary pro-btn">Delete</button> 
+              </div>
+              </div> 
+            </div>
+                </div>
+      </div>
+     </div> 
+     
+    
+            
+       
+     </div>
+    </div>  
+    </section>
+    <!--About Us section -->
+    <!--Our service section -->
+   
 
 
 

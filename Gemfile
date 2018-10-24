@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.2"
+ruby "2.2.6"
 
 gem 'devise'
 gem 'omniauth'
@@ -53,7 +53,7 @@ gem 'redis', '~>3.2'
 # gem 'unicorn'
 gem 'instagram'
 gem "faraday", "~> 0.9.0"
-gem 'sidekiq'
+#gem 'sidekiq'
 gem 'voucherify','~> 0.6.0'
 gem 'rails_rest_vote'
 gem 'rest-client','~> 1.8'
