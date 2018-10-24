@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  
+development:
+   adapter: postgresql
+   encoding: unicode
+   database: reddera_development
+   pool: 5
+   username: postgres
+   password: root
+
+test:
+   adapter: postgresql
+   encoding: unicode
+   database: reddera_development
+   pool: 5
+   username: postgres
+   password: root
+ 
+production:
+   adapter: postgresql
+   encoding: unicode
+   database: reddera_development
+   pool: 5
+   username: postgres
+   password: root

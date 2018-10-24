@@ -1,0 +1,129 @@
+<footer id="footer" class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+				<div class="col-md-3">
+                        <!-- Widget :: Address Info -->
+                        <div class="contacts-widget widget widget-footer">
+                            
+                            <div class="widget-content">
+							   <h3 class="widget-title">Main Menu</h3>
+                                <ul class="contacts-info-list">
+                                    <li> 
+										<a href="">How It Work</a>
+                                    </li>
+                                    <li> 
+										<a href="">Help</a>
+                                    </li>
+                                     <li>
+									 <a href="">FAQS</a>
+                                    </li>
+									 <li>
+									 <a href="">Sefty</a>
+                                    </li>
+									 <li>
+									 <a href="">My Account</a>
+                                    </li>
+									
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Widget :: Address Info -->
+                    </div>
+					<div class="col-md-3">
+                        <!-- Widget :: Address Info -->
+                        <div class="contacts-widget widget widget-footer">
+                            <h3 class="widget-title">Professionals</h3>
+                            <div class="widget-content">
+                                <ul class="contacts-info-list">
+                                    <li> 
+										 <a href="">Become Professional</a>
+                                    </li>
+                                    <li> 
+										 <a href="">Sign Up</a>| <a href="">Login</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Widget :: Address Info -->
+                    </div>
+					<div class="col-md-3">
+                        <!-- Widget :: Address Info -->
+                        <div class="contacts-widget widget widget-footer">
+                            <h3 class="widget-title">About</h3>
+                            <div class="widget-content">
+                                <ul class="contacts-info-list">
+                                    <li> 
+																			
+									 <a href="">Contact Us</a>
+                                 
+                                    </li>
+                                    <li> 
+										<a href="">Term & Policy</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Widget :: Address Info -->
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Widget :: About us -->
+                        <div class="widget-newsletter widget widget-footer">
+                            <h3 class="widget-title">Join Us On</h3>
+                            
+                            <div class="social-link">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Widget :: About us -->
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"> Copyright @ 2018 Power by <a href="#">Reddera</a> All Rihgt Reserved. </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<%=render 'layouts/login'%>
+
+<%=render 'layouts/signup'%>
+
+<%=render 'layouts/stylist_signup'%>
+
+
+<script type="text/javascript">
+    $(".signup").on("click", function () {
+        $('#myModal_signup').modal('show');
+    });
+    $(".Login").on("click", function () {
+
+        $('#myModal_login').modal('show');
+    });
+    $(".stylistsignup").on("click", function () {
+        $('#myModal_stylist_signup').modal('show');
+    });
+
+    $('#close_modal').on('click', function() {
+        $('#myModal_login').modal('hide');
+    });
+
+    $(".myAccount").on("click", function () {
+        document.cookie="myaccount=logged_in";
+        $('#myModal_login').modal('show');
+    });
+
+</script>
