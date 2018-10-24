@@ -2205,3 +2205,367 @@ Processing by HomeController#index as */*
   Rendered home/index.html.erb within layouts/application (10.1ms)
   Rendered layouts/_header.html.erb (1.7ms)
 Completed 200 OK in 310ms (Views: 307.4ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:13:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.9ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (1.2ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4247.7ms)
+Completed 500 Internal Server Error in 4513ms (ActiveRecord: 6.2ms)
+
+ActionView::Template::Error (Invalid CSS after "s": expected "{", was ""):
+    83:                             
+    84:                             <div>
+    85:                                 
+    86:                                 <%= image_tag("Homepage/1_0.jpg", class:"img-responsive img-circle")%>
+    87:                             </div>
+    88:                             
+    89:                         </div>
+  app/assets/stylesheets/font-awesome.css.erb:1673
+  app/views/home/index.html.erb:86:in `_app_views_home_index_html_erb__510306127_102147050'
+
+
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (32.8ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.3ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.9ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  [1m[36mPopularService Load (1.0ms)[0m  [1mSELECT `popular_services`.* FROM `popular_services`  ORDER BY `popular_services`.`id` ASC[0m
+  [1m[35mRecentlyBooked Load (0.7ms)[0m  SELECT `recently_bookeds`.* FROM `recently_bookeds`  ORDER BY `recently_bookeds`.`id` ASC
+  [1m[36mFeaturedProfessional Load (0.9ms)[0m  [1mSELECT `featured_professionals`.* FROM `featured_professionals`  ORDER BY `featured_professionals`.`id` ASC[0m
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (300.1ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (372.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:16:12 +0530
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.9ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.3ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (15778.5ms)
+  Rendered layouts/_login.html.erb (580.5ms)
+  Rendered layouts/_signup.html.erb (6.5ms)
+  Rendered layouts/_stylist_signup.html.erb (71.1ms)
+  Rendered layouts/_forgot_password.html.erb (21.8ms)
+  Rendered layouts/_header.html.erb (731.8ms)
+Completed 200 OK in 18221ms (Views: 18206.8ms | ActiveRecord: 4.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 127.0.0.1 at 2018-10-24 20:16:33 +0530
+
+
+Started GET "/footer.html" for 127.0.0.1 at 2018-10-24 20:16:36 +0530
+
+ActionController::RoutingError (No route matches [GET] "/footer.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run_machine'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.6.10) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.10) lib/rack/server.rb:287:in `start'
+  railties (4.2.5) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.2) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.2) lib/spring/client.rb:30:in `run'
+  spring (2.0.2) bin/spring:49:in `<top (required)>'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:20:43 +0530
+Processing by HomeController#index as HTML
+  [1m[36mServiceSubCategory Load (0.3ms)[0m  [1mSELECT `service_sub_categories`.* FROM `service_sub_categories`[0m
+  [1m[35mServiceCategory Load (0.2ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (49.3ms)
+  Rendered layouts/_login.html.erb (484.5ms)
+  Rendered layouts/_signup.html.erb (7.9ms)
+  Rendered layouts/_stylist_signup.html.erb (30.9ms)
+  Rendered layouts/_forgot_password.html.erb (10.5ms)
+  Rendered layouts/_header.html.erb (548.3ms)
+Completed 200 OK in 1625ms (Views: 1614.5ms | ActiveRecord: 0.6ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 127.0.0.1 at 2018-10-24 20:20:49 +0530
+
+
+Started GET "/footer.html" for 127.0.0.1 at 2018-10-24 20:20:54 +0530
+
+ActionController::RoutingError (No route matches [GET] "/footer.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run_machine'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.6.10) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.10) lib/rack/server.rb:287:in `start'
+  railties (4.2.5) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.2) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.2) lib/spring/client.rb:30:in `run'
+  spring (2.0.2) bin/spring:49:in `<top (required)>'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.0ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:22:32 +0530
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.3ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.5ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (43.9ms)
+  Rendered layouts/_login.html.erb (477.8ms)
+  Rendered layouts/_signup.html.erb (7.5ms)
+  Rendered layouts/_stylist_signup.html.erb (30.0ms)
+  Rendered layouts/_forgot_password.html.erb (10.5ms)
+  Rendered layouts/_header.html.erb (539.8ms)
+Completed 200 OK in 2419ms (Views: 2406.1ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 127.0.0.1 at 2018-10-24 20:22:40 +0530
+
+
+Started GET "/footer.html" for 127.0.0.1 at 2018-10-24 20:22:43 +0530
+
+ActionController::RoutingError (No route matches [GET] "/footer.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run_machine'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.6.10) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.10) lib/rack/server.rb:287:in `start'
+  railties (4.2.5) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.2) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.2) lib/spring/client.rb:30:in `run'
+  spring (2.0.2) bin/spring:49:in `<top (required)>'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:22:56 +0530
+Processing by HomeController#index as HTML
+  [1m[36mServiceSubCategory Load (0.6ms)[0m  [1mSELECT `service_sub_categories`.* FROM `service_sub_categories`[0m
+  [1m[35mServiceCategory Load (2.3ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_login.html.erb (500.5ms)
+  Rendered layouts/_signup.html.erb (5.9ms)
+  Rendered layouts/_stylist_signup.html.erb (37.2ms)
+  Rendered layouts/_forgot_password.html.erb (10.1ms)
+  Rendered layouts/_header.html.erb (570.7ms)
+Completed 200 OK in 1837ms (Views: 1813.9ms | ActiveRecord: 3.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-24 20:22:58 +0530
+Processing by HomeController#index as HTML
+  [1m[35mServiceSubCategory Load (0.3ms)[0m  SELECT `service_sub_categories`.* FROM `service_sub_categories`
+  [1m[36mServiceCategory Load (0.3ms)[0m  [1mSELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `service_categories`.* FROM `service_categories` WHERE `service_categories`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (42.8ms)
+  Rendered layouts/_login.html.erb (492.2ms)
+  Rendered layouts/_signup.html.erb (7.3ms)
+  Rendered layouts/_stylist_signup.html.erb (29.6ms)
+  Rendered layouts/_forgot_password.html.erb (11.7ms)
+  Rendered layouts/_header.html.erb (555.3ms)
+Completed 200 OK in 1564ms (Views: 1554.8ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+
+
+Started GET "/assets/Homepage/Home-banner.jpg" for 127.0.0.1 at 2018-10-24 20:23:04 +0530
+
+
+Started GET "/footer.html" for 127.0.0.1 at 2018-10-24 20:23:06 +0530
+
+ActionController::RoutingError (No route matches [GET] "/footer.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run_machine'
+  eventmachine (1.2.7) lib/eventmachine.rb:195:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.6.10) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.10) lib/rack/server.rb:287:in `start'
+  railties (4.2.5) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.5) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.2) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.2) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.2) lib/spring/client.rb:30:in `run'
+  spring (2.0.2) bin/spring:49:in `<top (required)>'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.2) lib/spring/binstub.rb:31:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /home/vinod/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (14.6ms)

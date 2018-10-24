@@ -5,8 +5,7 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
-/.bundle
+
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -16,8 +15,6 @@
 *.rbc
 capybara-*.html
 .rspec
-/log
-/tmp
 /public/system
 /coverage/
 /spec/tmp
@@ -44,8 +41,4 @@ bower.json
 # Ignore .byebug_history
 .byebug_history
 
-/.idea/
-/tmp/
-/.byebug_history
-/log/
-/solr/
+
